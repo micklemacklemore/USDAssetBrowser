@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from src.ui.mainwindow import Ui_MainWindow
+from USDAssetBrowser.ui.mainwindow import Ui_MainWindow
 import sys
 
 
@@ -11,9 +11,14 @@ class MyWindow(QMainWindow):
         self.ui_mainwindow.setupUi(self)
         self.setMinimumSize(1200, 800)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
+
+def main():
     app = QApplication(sys.argv)
     win = MyWindow()
     win.show()
     sys.exit(app.exec_())
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    main()
