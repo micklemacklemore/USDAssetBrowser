@@ -1,7 +1,7 @@
-from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from assetbrowser import Ui_MainWindow
+from ui.mainwindow import Ui_MainWindow
 import sys
+
 
 class MyWindow(QMainWindow):
 
